@@ -1,7 +1,7 @@
-import * as API from '../Api/apiMoviedb';
+import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
-export const useSearchMovies = input => {
+export const useSearchMovies = (input) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {

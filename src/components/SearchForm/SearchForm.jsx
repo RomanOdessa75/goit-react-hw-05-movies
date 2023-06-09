@@ -1,5 +1,6 @@
+// import { useSearchMovies } from 'utils/hooks/useSearchMovies';
 import { useSearchParams } from 'react-router-dom';
-import * as API from 'components/Api/apiMoviedb';
+import * as API from '../../utils/api/apiMoviedb';
 import { useEffect, useState } from 'react';
 import { TrendingList } from 'components/TrendingList/TrendingList';
 

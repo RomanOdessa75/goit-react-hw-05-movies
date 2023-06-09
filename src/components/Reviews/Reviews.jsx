@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useMovieReviews } from 'components/hooks/useMovieReviews';
+import { useMovieReviews } from 'utils/hooks/useMovieReviews';
 import PropTypes from 'prop-types';
 
 const Reviews = () => {

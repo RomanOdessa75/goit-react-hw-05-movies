@@ -1,9 +1,10 @@
 import { Outlet, Link, useParams, useLocation } from 'react-router-dom';
-import { useMovieDetails } from 'components/hooks/useMovieDetails';
+import { useMovieDetails } from 'utils/hooks/useMovieDetails';
 
-const MovieDetails = () => {
+ const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const { movieDetails } = useMovieDetails(movieId);
+
 
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
@@ -60,4 +61,4 @@ const MovieDetails = () => {
   );
 };
 
-export default MovieDetails;
+export default MovieDetailsPage;

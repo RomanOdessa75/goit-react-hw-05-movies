@@ -1,7 +1,7 @@
-import * as API from '../Api/apiMoviedb';
+import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
-export const useMovieCredits = movieId => {
+export const useMovieCredits = (movieId) => {
   const [movieCredits, setMovieCredits] = useState([]);
 
   useEffect(() => {

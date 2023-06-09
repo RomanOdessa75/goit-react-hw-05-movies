@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Loader } from '../Loader/Loader';
+import { Loader } from 'components/Loader/Loader';
 import css from './SharedLayout.module.css';
 import styled from 'styled-components';
 
@@ -12,7 +12,7 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const SharedLayout = () => {
+export const SharedLayout = () => {
   return (
     <div className="css.container">
       <header className="css.header">
@@ -31,5 +31,3 @@ const SharedLayout = () => {
     </div>
   );
 };
-
-export default SharedLayout;

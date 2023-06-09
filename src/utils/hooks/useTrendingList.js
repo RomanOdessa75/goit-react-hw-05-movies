@@ -1,4 +1,4 @@
-import * as API from '../Api/apiMoviedb';
+import * as API from '../api/apiMoviedb';
 import { useState, useEffect } from 'react';
 
 export const useTrendingList = () => {
@@ -9,4 +9,4 @@ export const useTrendingList = () => {
   }, []);
 
   return { trendingMovies };
-};
+};  
